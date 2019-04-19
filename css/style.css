@@ -65,6 +65,7 @@
   bottom:0;
 }
 
+/*link decoration*/
 a{
     text-decoration: none;
     color:  black;
@@ -105,6 +106,7 @@ a.skip-main:focus, a.skip-main:active {
     z-index:999;
 }
 
+
 body, div, p, a, label, legend{
     font-family: 'Raleway', sans-serif;
 }
@@ -120,7 +122,6 @@ i{
     padding: 12px;
 }
 
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -134,34 +135,25 @@ li.topbar {
 
 
 .form{
+  padding-left: 250px;
+  padding-top: 50px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row, .nav {   
     flex-direction: column;
-  }
-  .notimportant{
-    display: none;
   }
   li.topbar {
   display: block;
   text-align: center;
   }
-  .row{
+
+  .form{
+    padding-left: 100px;
   }
 
 }
-
-/*@media only screen and (orientation: landscape){
-    .profile{
-        display: none;
-    }
-    .notimportant{
-    display: none;
-  }
-}*/
-
 
 /*form stuff*/
 input:focus{
@@ -196,15 +188,10 @@ legend{
   position: relative;
 }
 
-.form{
-  padding-left: 250px;
-}
-
 /*icon sizing*/
 .fas{
   font-size: 124px;
 }
-
 
 /*typewriter*/
 .typewriter h1 {
